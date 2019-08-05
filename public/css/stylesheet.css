@@ -1,0 +1,621 @@
+h3.form-heading {
+    margin-top: 8px;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+	background-color: #e6e6e6;
+}
+
+button.register {
+	width: 100px;
+}
+
+button.profile {
+  width: 90px;
+}
+
+button.inv {
+  width: 200px;
+}
+
+button.add {
+  width: 150px;
+}
+
+button.nav {
+  width: 150px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+div.view {
+  margin-top: 80px;
+}
+
+div.login {
+  margin-top: 50px;
+}
+
+a.nav {
+  color: #ffffff;
+}
+
+a.nav:hover {
+  color: #000080;
+}
+
+div.submenu {
+   margin-top: 50px;
+   width: 230px;"
+}
+
+i.red {
+  color: red ;
+}
+
+/* Flexbox Example */
+.flexbox { display: flex; }
+.flexbox .stretch { flex: 1; }
+.flexbox .normal { flex: 0; margin: 0 0 0 1rem; }
+.flexbox div input { padding: .5em 1em; width: 100%; }
+.flexbox div button { padding: .5em 1em; white-space: nowrap; }
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: 200;
+  background-color: #2e353d;
+  position: fixed;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  color: #e1ffff;
+}
+.nav-side-menu .brand {
+  background-color: #23282e;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+  /*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #181c20;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #020203;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 0px;
+  border-left: 3px solid #2e353d;
+  border-bottom: 1px solid #23282e;
+}
+.nav-side-menu a li{
+<<<<<<< HEAD
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav-side-menu a:hover{
+=======
+>>>>>>> 558c21e6c26f9043810d916b07f52d9311b946c3
+  text-decoration: none;
+}
+<<<<<<< HEAD
+=======
+.nav-side-menu a:hover{
+  text-decoration: none;
+}
+>>>>>>> 558c21e6c26f9043810d916b07f52d9311b946c3
+
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.search {
+  border-color: #939393;
+}
+
+.input-group-addon {
+    min-width:150px;
+    text-align:left;
+}
+
+
+td.action {
+    width: 250px;
+}
+
+
+button.action {
+    min-width: 100px;
+  }
+
+<<<<<<< HEAD
+@media screen and (max-width: 1060px) {
+=======
+@media (max-width: 1060px) {
+>>>>>>> 558c21e6c26f9043810d916b07f52d9311b946c3
+   .input-group-addon {
+      min-width:30px;
+      text-align:left;
+  } 
+
+  button.action {
+    min-width: 30px;
+  }
+
+  td.action {
+    width: 100px;
+  }
+<<<<<<< HEAD
+
+  .orders-modal {
+      width: 425px;
+  }
+=======
+}
+
+#myTable {
+    float:left;
+    border:1px solid #dfdfdf;
+    border-collapse:collapse;   
+    width:100%;
+    font-size:12px;
+}
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media all and (min-width: 768px) and (max-width: 959px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;       
+    } 
+}
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 600px */
+@media all and (min-width: 600px) and (max-width: 767px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    } 
+}
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media all and (min-width: 480px) and (max-width: 599px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    } 
+}
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media all and (max-width: 479px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    }      
+>>>>>>> 558c21e6c26f9043810d916b07f52d9311b946c3
+}
+
+.display-table
+{
+    display: table;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.display-table-row
+{
+    display: table-row;
+    height: 100%;
+}
+
+.display-table-cell
+{
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+
+.menu-heading
+{
+  height: 70px;
+}
+
+.hide-x-bar
+{
+  overflow-x: hidden; 
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#24292e;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#2a2e33;
+    /* Type */
+    text-decoration:none;
+    color:#fff;
+}
+
+.accordion-section-title:link  {
+    text-decoration:none;
+}
+
+.accordion-section-title:visited  {
+    color:#fff; 
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}
+
+.panel-dialog
+{
+    margin-top: 250px;
+    width: 560px;
+}
+
+<<<<<<< HEAD
+
+.action-restaurant {
+  width: 50px;
+}
+
+#container {   
+  width: 760px;  
+}   
+#keyboard {  
+  margin: 0; 
+  margin-left: 25px; 
+  padding: 0;  
+  list-style: none;  
+}  
+
+#keyboard li {  
+    float: left;  
+    margin: 0 5px 5px 0;  
+    width: 70px;  
+    height: 60px;  
+    font-size: 24px;
+    line-height: 60px;  
+    text-align: center;  
+    background: #fff;  
+    border: 1px solid #a0a0a0;  
+    border-radius: 5px;  
+} 
+
+#keyboard .ctrl {  
+    width: 90px;  
+    background-color: #d1d1d1;
+} 
+
+.capslock, .tab, .left-shift, .clearl, .switch {  
+  clear: left;  
+}              
+  
+#keyboard li:hover {  
+  position: relative;  
+  top: 1px;  
+  left: 1px;  
+  border-color: #e5e5e5;  
+  cursor: pointer;  
+} 
+
+#keyboard li:active {  
+  position: relative;  
+  top: 1px;  
+  left: 1px;  
+  border-color: #e5e5e5;  
+  cursor: pointer;  
+}
+
+.item_hide{
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .orders-modal {
+      vertical-align: middle;
+      width: 600px;
+  }
+}
+
+@media screen and (min-width: 883px) {
+  .orders-modal {
+      vertical-align: middle;
+      width: 850px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .orders-modal {
+      width: 1000px;
+  }
+}
+
+#myTable {
+    float:left;
+    border:1px solid #dfdfdf;
+    border-collapse:collapse;   
+    width:100%;
+    font-size:12px;
+}
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media all and (min-width: 768px) and (max-width: 959px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;       
+    } 
+}
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 600px */
+@media all and (min-width: 600px) and (max-width: 767px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    } 
+
+    .panel-dialog {
+        margin-top: 250px;
+        width: 380px;
+    }  
+}
+
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media all and (min-width: 480px) and (max-width: 599px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    } 
+
+    .panel-dialog {
+        margin-top: 250px;
+        width: 380px;
+    } 
+
+    #keyboard {  
+      margin-left: 5px; 
+    }   
+}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media all and (max-width: 479px) {
+    .col_hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    } 
+
+    .mobile{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    }
+
+    .panel-dialog {
+        margin-top: 250px;
+        margin-left: 30px;
+        width: 370px;
+    }
+
+    #keyboard {  
+      margin-left: 5px; 
+    }             
+}
+
+@media all and (min-width: 750px) and (max-width: 770px) {
+  a.ipad-mode {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+
+}
+=======
+>>>>>>> 558c21e6c26f9043810d916b07f52d9311b946c3
